@@ -1,3 +1,4 @@
 # neochat
+  
+  Chat server
 
-## Chat widget for web apps
