@@ -1,0 +1,44 @@
+{
+  "name": "neochat",
+  "version": "0.0.1",
+  "description": "Chat server for web apps",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts | pino-pretty -c -l",
+    "lint": "tslint src/**/*.ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neoito-hub/neochat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neoito-hub/neochat/issues"
+  },
+  "homepage": "https://github.com/neoito-hub/neochat#readme",
+  "dependencies": {
+    "@types/pino": "^6.3.2",
+    "apollo-server": "^2.18.2",
+    "lodash": "^4.17.20",
+    "pino": "^6.7.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "husky": "^4.3.0",
+    "jest": "^26.5.3",
+    "pino-pretty": "^4.3.0",
+    "ts-jest": "^26.4.1",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "tslint": "^6.1.3",
+    "typescript": "^4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}

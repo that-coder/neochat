@@ -1,3 +1,4 @@
+
 # neo-chat
 
 
@@ -29,10 +30,4 @@ or
 npm install
 npm start
 ```
-
-
-
-
-
-
 
